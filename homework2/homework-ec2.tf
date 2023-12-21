@@ -48,11 +48,14 @@ resource "aws_instance" "hw" {
   }
 }
 resource "aws_instance" "manual-instance" {
-  name = "manual-instance"
+  name= "manual-instance"  
+#   % terraform import aws_instance.web i-12345678 need to run this command but chnage to your instance name and ID
  
 }
 
+
 resource "aws_security_group" "launch-wizard-1" {
-  name = "launch-wizard-1"
+    name = "launch-wizard-1" 
+    # % terraform import aws_security_group.elb_sg sg-903004f8 (same here)
  
 }
