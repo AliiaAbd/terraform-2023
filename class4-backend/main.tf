@@ -10,6 +10,8 @@ resource "aws_key_pair" "deployer" {
 
   tags = {
     name = "kaizen-key"
+    team= "devops"
   }
+
 }
   
